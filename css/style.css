@@ -21,10 +21,23 @@ main::after {
     clear: both;
 }
 
+.nav-top {
+    height: calc(100% - 80px);
+}
+
+.nav-bottom {
+    height: 80px;
+}
+
 .col-sn {
     width: 50px;
     height: 100%;
+    min-height: 480px;
     background-color:black;
+}
+
+.nav-playlist {
+    display: none;
 }
 
 .col-dx {
@@ -38,7 +51,7 @@ main::after {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: calc(100% - 50px);
     height: 90px;
     background-color: rgba(0,0,0,0.4);
     z-index: 999;
@@ -65,6 +78,14 @@ footer {
     padding: 20px;
 }
 
+.debug .nav-top {
+    background-color: lightgrey;
+}
+
+.nav-bottom {
+    background-color: rgb(150, 147, 147);
+}
+
 
 /* media query */
 @media screen and (min-width: 480px){
@@ -72,7 +93,17 @@ footer {
         width: 210px;
     }
 
+    .nav-playlist {
+        /* display: block; */
+    }
+
     .col-dx {
         width: calc(100% - 210px);
     }
+
+    .call-to-action {
+        width: calc(100% - 210px);
+    }
+
+    
 }
