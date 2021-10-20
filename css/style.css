@@ -54,7 +54,7 @@ main::after {
     width: calc(100% - 50px);
     height: 90px;
     background-color: rgba(0,0,0,0.4);
-    z-index: 999;
+    z-index: 2;
     text-align: right;
     padding: 20px;
 }
@@ -67,6 +67,8 @@ footer {
     width: 100%;
     height: 100px;
     background-color: rgb(44, 44, 44);
+    position: fixed;
+    z-index: 1;
 }
 
 
@@ -83,7 +85,7 @@ footer {
 }
 
 .nav-bottom {
-    background-color: rgb(150, 147, 147);
+    background-color: yellow
 }
 
 
@@ -105,5 +107,5 @@ footer {
         width: calc(100% - 210px);
     }
 
-    
+
 }
